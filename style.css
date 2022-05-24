@@ -116,17 +116,36 @@ button {
     grid-area: left-menu;
 }
 
+/* Emails section */
+
 .emails {
     background-color: blue;
     grid-area: emails;
 }
+
+/* Quick settings section */
 
 .quick-settings {
     background-color: brown;
     grid-area: quick-settings;
 }
 
+/* Shortcuts icons section */
+
 .shortcuts-icons {
     background-color: blueviolet;
     grid-area: shortcuts-icons;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template: 
+            "header header" auto
+            "left-menu emails" 1fr/
+            50px 1fr;
+    }
+    .quick-settings, 
+    .shortcuts-icons {
+        display: none;
+    }
 }
