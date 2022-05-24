@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header header" auto
+    "left-menu emails quick-settings shortcuts-icons" 1fr/
+    170px 1fr 170px 40px;
+}
+
+/* Header section */
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.header button span {
+    font-size: 1.2rem;
+}
+
+
+.header__left-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header__search-bar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.search-icon {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 6px;
+    color: rgb(142, 142, 142);
+}
+
+.search-icon span {
+    font-size: 1.3rem;
+}
+
+.search-bar {
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+/* This makes the search bar box not visable but its not always a good option in general
+
+.search-bar:focus {
+    outline: none;
+}
+
+*/
+
+.expand-icon {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 6px;
+    color: rgb(142, 142, 142);
+}
+
+.header__right-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.profile {
+    border: 1px solid rgb(209 209 209);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.profile img {
+    border-radius: 0%;
+}
+
+.profile .container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    place-items: center;
+}
+
+/* Left-menu section */
+
+.left-menu {
+    background-color: aqua;
+    grid-area: left-menu;
+}
+
+.emails {
+    background-color: blue;
+    grid-area: emails;
+}
+
+.quick-settings {
+    background-color: brown;
+    grid-area: quick-settings;
+}
+
+.shortcuts-icons {
+    background-color: blueviolet;
+    grid-area: shortcuts-icons;
+}
