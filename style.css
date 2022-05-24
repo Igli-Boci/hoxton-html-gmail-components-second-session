@@ -147,6 +147,10 @@ button {
     grid-area: emails;
 }
 
+.email-list {
+    list-style: none;
+}
+
 /* Quick settings section */
 
 .quick-settings {
