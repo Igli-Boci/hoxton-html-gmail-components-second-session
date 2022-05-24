@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -112,12 +113,31 @@ button {
 /* Left-menu section */
 
 .left-menu {
-    background-color: aqua;
     grid-area: left-menu;
 }
 
 .items {
     list-style: none;
+    padding-right: 1rem;
+    display: grid;
+    gap: 0.2rem;
+}
+
+.links {
+    text-decoration: none;
+    color: initial;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0.2rem 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.links.inbox {
+    color: red;
+    background-color: #ff000020;
 }
 
 /* Emails section */
