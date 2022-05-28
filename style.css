@@ -161,8 +161,12 @@ button {
 }
 
 .email-item.read {
-    font-weight: 500;
+    font-weight: 400;
     background-color: #00000010;
+}
+
+.email-item.selected {
+    border-left: 2px solid #0000ff30;
 }
 
 .email-item__sender,
