@@ -143,12 +143,23 @@ button {
 /* Emails section */
 
 .emails {
-    background-color: blue;
     grid-area: emails;
 }
 
 .email-list {
     list-style: none;
+}
+
+.email-item {
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr auto;
+}
+
+.email-item__sender,
+.email-item__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Quick settings section */
