@@ -148,11 +148,21 @@ button {
 
 .email-list {
     list-style: none;
+    display: grid;
 }
 
 .email-item {
     display: grid;
     grid-template-columns: auto auto 1fr 1fr auto;
+    padding: 0.2rem 0.5rem;
+    gap: 0.3rem;
+    border-bottom: 1px solid #ff000020;
+    font-weight: bold;
+}
+
+.email-item.read {
+    font-weight: 500;
+    background-color: #00000010;
 }
 
 .email-item__sender,
